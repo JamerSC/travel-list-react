@@ -50,13 +50,14 @@ ii. Child-to-Parent communication
 iii. Accessing global state
 
 WHEN YOU KNOW HOW TO THINK IN REACT? Youll be able to answer:
-🤔 How to break up a UI design into components?
-🤔 How make some components reusable?
-🤔 How to assemble UI from reusable components?
-🤔 What pieces of state do I need for interactivity?
-🤔 Where to place state? (What component should own of piece of state?)
-🤔 What types of state can or should I use?
-🤔 How to make data flow through app?
+
+- 🤔 How to break up a UI design into components?
+- 🤔 How make some components reusable?
+- 🤔 How to assemble UI from reusable components?
+- 🤔 What pieces of state do I need for interactivity?
+- 🤔 Where to place state? (What component should own of piece of state?)
+- 🤔 What types of state can or should I use?
+- 🤔 How to make data flow through app?
 
 10. Fundamentals of State Management
 
@@ -64,16 +65,22 @@ WHEN YOU KNOW HOW TO THINK IN REACT? Youll be able to answer:
   ex. Giving a piece of state a home.
 - Types of state: LOCAL vs. GLOBAL STATE?
 
-✳️LOCAL
-👉 State need only by one of few components
-👉 State that is defined in component and only that component and child components have access tp ot) by passing via props)
-👉 We should always start with local state
-🌐GLOBAL
-👉 State that many components might need
-👉 Shared state that is accessible to every component in the entire application.
-Ex.
-UDEMY seach field - local state
-UDEMY Shopping cart & cart profile notif - global state
+- ✳️LOCAL
+- 👉 State need only by one of few components
+- 👉 State that is defined in component and only that component and child components have access tp ot) by passing via props)
+- 👉 We should always start with local state
+- 🌐GLOBAL
+- 👉 State that many components might need
+- 👉 Shared state that is accessible to every component in the entire application.
+  Ex.
+  UDEMY seach field - local state
+  UDEMY Shopping cart & cart profile notif - global state
 
 - State: When & Where?
   ![alt text](image.png)
+
+11. Thinking About State and Lifting State Up
+12. Reviewing "Lifting Up State"
+    ![alt text](image-1.png)
+    ![alt text](image-2.png)
+    ![alt text](image-3.png)
