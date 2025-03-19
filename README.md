@@ -84,3 +84,8 @@ WHEN YOU KNOW HOW TO THINK IN REACT? Youll be able to answer:
     ![alt text](image-1.png)
     ![alt text](image-2.png)
     ![alt text](image-3.png)
+
+March 19, 2025
+
+13. Deleting an Item: More Child-to-Parent Communication!
+14. Updating an Item: Complex Immutable Data Operation

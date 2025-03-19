@@ -11,14 +11,34 @@ export default function App() {
   const [items, setItems] = useState([]);
 
   function handleAddItems(item) {
+    console.log(item);
     setItems((items) => [...items, item]);
+  }
+
+  function handleToggleItem(id) {
+    setItems((items) =>
+      items.map((item) =>
+        // use spread operator
+        item.id === id ? { ...item, packed: !item.packed } : item
+      )
+    );
+  }
+
+  function handleDeleteItem(id) {
+    console.log("Deleted Item ID No: " + id);
+    // filter method
+    setItems((items) => items.filter((item) => item.id !== id));
   }
 
   return (
     <div>
       <Logo />
       <Form onAddItems={handleAddItems} />
-      <PickingList items={items} />
+      <PickingList
+        items={items}
+        onDeleteItem={handleDeleteItem}
+        onToggleItem={handleToggleItem}
+      />
       <Stats />
     </div>
   );
@@ -46,7 +66,7 @@ function Form({ onAddItems }) {
     //console.log(e);
     // Create new item object
     const newItem = { description, quantity, packed: false, id: Date.now() };
-    console.log(newItem);
+    //console.log(newItem);
 
     onAddItems(newItem);
 
@@ -83,12 +103,17 @@ function Form({ onAddItems }) {
   );
 }
 
-function PickingList({ items }) {
+function PickingList({ items, onDeleteItem, onToggleItem }) {
   return (
     <div className="list">
       <ul>
         {items.map((item) => (
-          <Item item={item} key={item.id} />
+          <Item
+            item={item}
+            key={item.id}
+            onToggleItem={onToggleItem}
+            onDeleteItem={onDeleteItem}
+          />
         ))}
       </ul>
     </div>
@@ -96,13 +121,20 @@ function PickingList({ items }) {
 }
 
 // Props using destructure
-function Item({ item }) {
+function Item({ item, onDeleteItem, onToggleItem }) {
   return (
     <li>
+      <input
+        type="checkbox"
+        onClick={() => {
+          onToggleItem(item.id);
+          console.log(item);
+        }}
+      />
       <span style={item.packed ? { textDecoration: "line-through" } : {}}>
         {item.quantity} {item.description}
       </span>
-      <button>❌</button>
+      <button onClick={() => onDeleteItem(item.id)}>❌</button>
     </li>
   );
 }
