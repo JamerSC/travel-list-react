@@ -1,5 +1,7 @@
 March 14, 2025
 
+Section 6 No. 69
+
 1. Starting a New Project: The "Far Away" Travel List
 2. Building the Layout
 3. Rendering the Items List
@@ -89,3 +91,10 @@ March 19, 2025
 
 13. Deleting an Item: More Child-to-Parent Communication!
 14. Updating an Item: Complex Immutable Data Operation
+
+March 20, 2025
+
+15. Derived State
+    ![alt text](image-4.png)
+16. Calculating Statistics as Derived State
+    gi
