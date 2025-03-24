@@ -98,3 +98,8 @@ March 20, 2025
     ![alt text](image-4.png)
 16. Calculating Statistics as Derived State
     gi
+
+March 24, 2025
+
+17. Sorting Items (3 different criteria, input, description, & packed)
+18. Clearing the List
