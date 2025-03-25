@@ -103,3 +103,7 @@ March 24, 2025
 
 17. Sorting Items (3 different criteria, input, description, & packed)
 18. Clearing the List
+
+March 25, 2025
+
+19. Moving Components Into Separate Files
