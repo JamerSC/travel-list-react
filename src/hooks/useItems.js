@@ -1,17 +1,6 @@
 import { useState } from "react";
-import Logo from "./Logo";
-import Form from "./Form";
-import PickingList from "./PickingList";
-import Stats from "./Stats";
 
-// used for sample data
-// const initialItems = [
-//   { id: 1, description: "Passports", quantity: 2, packed: false },
-//   { id: 2, description: "Socks", quantity: 12, packed: false },
-//   { id: 3, description: "Charger", quantity: 1, packed: true },
-// ];
-
-export default function App() {
+export default function useItems() {
   const [items, setItems] = useState([]);
 
   function handleAddItems(item) {
@@ -42,17 +31,12 @@ export default function App() {
     if (confirmed) setItems([]);
   }
 
-  return (
-    <div>
-      <Logo />
-      <Form onAddItems={handleAddItems} />
-      <PickingList
-        items={items}
-        onDeleteItem={handleDeleteItem}
-        onToggleItem={handleToggleItem}
-        onClearList={handleClearList}
-      />
-      <Stats items={items} />
-    </div>
-  );
+  return {
+    items,
+    setItems,
+    handleAddItems,
+    handleToggleItem,
+    handleDeleteItem,
+    handleClearList,
+  };
 }

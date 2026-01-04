@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Item from "./Item";
 
-export default function PickingList({
+export default function PackingList({
   items,
   onDeleteItem,
   onToggleItem,

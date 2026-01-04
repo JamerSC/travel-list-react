@@ -9,6 +9,7 @@ export default function Form({ onAddItems }) {
   // function handleAddItems(item) {
   //   setItems((items) => [...items, item]);
   // }
+
   function handleSubmit(e) {
     e.preventDefault();
 
@@ -17,11 +18,12 @@ export default function Form({ onAddItems }) {
     //console.log(e);
     // Create new item object
     const newItem = { description, quantity, packed: false, id: Date.now() };
-    //console.log(newItem);
-    onAddItems(newItem);
 
-    setDescription("");
-    setQuantity(1);
+    onAddItems(newItem);
+    //console.log(newItem);
+
+    setDescription(""); // set description to empty string
+    setQuantity(1); // set select option to default 1
   }
 
   return (

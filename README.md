@@ -79,13 +79,13 @@ WHEN YOU KNOW HOW TO THINK IN REACT? Youll be able to answer:
   UDEMY Shopping cart & cart profile notif - global state
 
 - State: When & Where?
-  ![alt text](image.png)
+  ![alt text](./public/ss/image.png)
 
 11. Thinking About State and Lifting State Up
 12. Reviewing "Lifting Up State"
-    ![alt text](image-1.png)
-    ![alt text](image-2.png)
-    ![alt text](image-3.png)
+    ![alt text](./public/ss/image-1.png)
+    ![alt text](./public/ss/image-2.png)
+    ![alt text](./public/ss/image-3.png)
 
 March 19, 2025
 
@@ -95,7 +95,7 @@ March 19, 2025
 March 20, 2025
 
 15. Derived State
-    ![alt text](image-4.png)
+    ![alt text](./public/ss/image-4.png)
 16. Calculating Statistics as Derived State
     gi
 
