@@ -5,6 +5,7 @@ export default function Item({ item, onDeleteItem, onToggleItem }) {
     <li>
       <input
         type="checkbox"
+        value={item.packed}
         onClick={() => {
           onToggleItem(item.id);
           console.log(item);

@@ -5,6 +5,7 @@ import Stats from "./components/Stats";
 import useItems from "./hooks/useItems";
 
 export default function App() {
+  // lifting up state
   const {
     items,
     // setItems,

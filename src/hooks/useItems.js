@@ -12,6 +12,7 @@ export default function useItems() {
     setItems((items) =>
       items.map((item) =>
         // use spread operator
+        // create a new array
         item.id === id ? { ...item, packed: !item.packed } : item
       )
     );

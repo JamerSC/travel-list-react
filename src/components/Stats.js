@@ -1,4 +1,6 @@
+// passing the array of items using props - destructure
 export default function Stats({ items }) {
+  // return this footer if empty array
   if (!items.length) {
     return (
       <footer className="stats">
@@ -9,10 +11,12 @@ export default function Stats({ items }) {
     );
   }
 
+  // derived state
   const numItems = items.length;
   const numPacked = items.filter((item) => item.packed).length;
   const percentage = Math.round((numPacked / numItems) * 100);
 
+  // display if contains an array of data
   return (
     <footer className="stats">
       <em>

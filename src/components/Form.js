@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export default function Form({ onAddItems }) {
   // controlled elements
+  // same as getter and setter
   const [description, setDescription] = useState(""); // string ""
   const [quantity, setQuantity] = useState(1); // integer 1,2,3...
 
